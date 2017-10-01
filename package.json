@@ -12,7 +12,6 @@
   "dependencies": {
     "chai": "^4.1.2",
     "cheerio": "^1.0.0-rc.2",
-    "mocha": "^3.5.3",
-    "urlify": "^0.3.6"
+    "mocha": "^3.5.3"
   }
 }
