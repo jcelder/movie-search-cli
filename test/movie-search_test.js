@@ -12,9 +12,9 @@ describe('movie-search.js', function() {
     })
   })
   describe('urlSafe()', function() {
-    it('should return \'finding%20nemo\' when passed \'finding nemo\'', () => {
+    it('should return \'finding%2Bnemo\' when passed \'finding nemo\'', () => {
       const urlSafe = require('../movie-search.js').urlSafe
-      expect(urlSafe('finding nemo')).to.deep.equal('finding%20nemo')
+      expect(urlSafe('finding nemo')).to.deep.equal('finding%2Bnemo')
     })
   })
 })
