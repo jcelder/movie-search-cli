@@ -8,5 +8,10 @@ const urlSafe = (str) => {
   return str.replace(/ /g, '%2B')
 }
 
+const url = `http://www.imdb.com/find?ref_=nv_sr_fn&q=${urlSafe(searchTerm)}&s=all`
+
+http.get(url, (res) => {
+  
+})
 
 module.exports = { urlSafe }
