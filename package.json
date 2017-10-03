@@ -12,6 +12,8 @@
   "dependencies": {
     "chai": "^4.1.2",
     "cheerio": "^1.0.0-rc.2",
-    "mocha": "^3.5.3"
+    "mocha": "^3.5.3",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   }
 }
