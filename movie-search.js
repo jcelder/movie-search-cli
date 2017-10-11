@@ -26,34 +26,6 @@ const printSearchResults = (results) => {
   })
 }
 
-// http.get(url, (res) => {
-//   const { statusCode } = res;
-//   let error
-//   if (statusCode !== 200) {
-//     error = new Error(`Request Failed.
-//       Status Code: ${statusCode}`)
-//   }
-//   if (error) {
-//     console.error(error.message)
-//     // consume response data to free up memory
-//     res.resume();
-//     return
-//   }
-//
-//   res.setEncoding('utf8')
-//   let rawData = ''
-//   res.on('data', chunk => rawData += chunk )
-//   res.on('end', () => {
-//     try {
-//       const $ = cheerio.load(rawData)
-//       const results = $('.findSection').first().find('.result_text').map((i, elem) => $(elem).text())
-//       // console.log(results)
-//       printSearchResults(results.toArray())
-//     } catch (e) {
-//       console.error(e.message)
-//     }
-//   })
-// })
 
 rp(options)
   .then(($) => {
